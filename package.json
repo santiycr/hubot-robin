@@ -4,25 +4,20 @@
   "version": "0.0.0",
   "author": "Santiago Suarez Ordoñez <santiycr@gmail.com>",
   "license": "MIT",
-
   "keywords": "robin, hubot, hubot-scripts",
-
   "repository": {
     "type": "git",
     "url": "git://github.com/hubot-scripts/hubot-robin.git"
   },
-
   "bugs": {
     "url": "https://github.com/hubot-scripts/hubot-robin/issues"
   },
-
   "dependencies": {
+    "robin-js-sdk": "^0.5.1"
   },
-
   "peerDependencies": {
     "hubot": "2.x"
   },
-
   "devDependencies": {
     "chai": "^2.1.1",
     "coffee-script": "1.6.3",
@@ -35,11 +30,10 @@
     "matchdep": "~0.3.0",
     "mocha": "^2.1.0",
     "sinon": "^1.13.0",
+    "hubot-test-helper": "0.0.7",
     "sinon-chai": "^2.7.0"
   },
-
   "main": "index.coffee",
-
   "scripts": {
     "test": "grunt test"
   }
