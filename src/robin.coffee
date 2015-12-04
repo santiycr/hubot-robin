@@ -4,7 +4,7 @@
 #
 # Configuration:
 #   ROBIN_TOKEN
-#   ROBIN_ORGANIZATION
+#   ROBIN_ORGANIZATION (Slug or ID)
 #
 # Commands:
 #   hubot rooms - get all free rooms in the office
@@ -24,7 +24,7 @@ robinOrg = process.env.ROBIN_ORGANIZATION
 module.exports = (robot) ->
   robin = new Robin(robinToken)
   location = null
-  robin.api.organizations.locations.get('saucelabs').then( (response) ->
+  robin.api.organizations.locations.get(robinOrg).then( (response) ->
     resp = response.getData()
     location = resp[0].id
   ).then( () ->
