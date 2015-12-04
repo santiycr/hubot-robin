@@ -31,6 +31,7 @@ module.exports = (robot) ->
     robot.respond /rooms/, (res) ->
       robin = new Robin(robinToken)
       robin.api.locations.spaces.get(location, null, {per_page: 100}).then( (response) ->
+        final_response = ""
         for space in response.getData()
           name = space.name
           if not space.current_event
@@ -40,7 +41,8 @@ module.exports = (robot) ->
             time_diff = if next_event_date then (next_event_date.getTime() - Date.now()) / 1000 else 0
             if time_diff and time_diff < (60 * 60) # 1 hour
               time_notice = " for #{Math.round(time_diff / 60)} minutes"
-            res.reply "#{name} is free#{time_notice}"
+            final_response += "\n#{name} is free#{time_notice}"
+        res.reply if final_response then final_response else "no rooms available :("
       )
   )
 
