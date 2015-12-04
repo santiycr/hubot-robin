@@ -21,6 +21,9 @@ Then add **hubot-robin** to your `external-scripts.json`:
 ## Sample Interaction
 
 ```
-user1>> hubot hello
-hubot>> hello!
+user1>> hubot rooms
+hubot>> Hermione is free
+hubot>> Garfunkel is free for 58 minutes
+hubot>> Chewbacca is free
+hubot>> Luigi is free for 12 minutes
 ```
