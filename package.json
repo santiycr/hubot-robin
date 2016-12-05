@@ -13,13 +13,14 @@
     "url": "https://github.com/hubot-scripts/hubot-robin/issues"
   },
   "dependencies": {
+    "lodash.once": "^4.1.1",
     "robin-js-sdk": "^0.5.1"
   },
   "peerDependencies": {
     "hubot": "2.x"
   },
   "devDependencies": {
-    "chai": "^2.1.1",
+    "chai": "^3.5.0",
     "coffee-script": "1.6.3",
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
@@ -27,13 +28,14 @@
     "grunt-mocha-test": "~0.12.7",
     "grunt-release": "~0.11.0",
     "hubot": "2.x",
+    "hubot-test-helper": "^1.5.0",
     "matchdep": "~0.3.0",
-    "mocha": "^2.1.0",
-    "sinon": "^1.13.0",
-    "hubot-test-helper": "0.0.7",
+    "mocha": "^3.2.0",
+    "nock": "^9.0.2",
+    "sinon": "^1.17.6",
     "sinon-chai": "^2.7.0"
   },
-  "main": "index.coffee",
+  "main": "index.js",
   "scripts": {
     "test": "grunt test"
   }
