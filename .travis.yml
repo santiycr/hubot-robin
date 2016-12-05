@@ -1,11 +1,8 @@
 language: node_js
 node_js:
-  - "0.12"
-  - "0.10"
-  - "iojs"
-sudo: false
-cache:
-  directories:
-    - node_modules
-notifications:
-  email: false
+  - "node"
+install:
+  - 'npm install -g npm'
+  - 'npm install'
+before_script:
+  - 'npm install -g grunt-cli'
