@@ -1,8 +1,10 @@
 # hubot-robin
 
+[![Build Status](https://travis-ci.org/santiycr/hubot-robin.svg?branch=master)](https://travis-ci.org/santiycr/hubot-robin)
+
 A hubot robinpowered integration for getting room occupancy and other data about your office
 
-See [`src/robin.coffee`](src/robin.coffee) for full documentation.
+See [`src/robin.js`](src/robin.js) for full documentation.
 
 ## Installation
 
