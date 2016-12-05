@@ -1,4 +1,6 @@
 process.env.EXPRESS_PORT = process.env.PORT = 0;
+process.env.ROBIN_TOKEN = 'FAKE FAKE TOKEN';
+process.env.ROBIN_ORGANIZATION = 'fake_org';
 let chai = require('chai');
 let sinon = require('sinon');
 let nock = require('nock');
@@ -9,7 +11,7 @@ let { expect } = chai;
 
 function setupNock() {
   nock('https://api.robinpowered.com:443', {"encodedQueryParams":true})
-    .get('/v1.0/organizations/saucelabs/locations')
+    .get('/v1.0/organizations/fake_org/locations')
     .reply(200, {
       "meta":{
         "status_code":200,"status":"OK","message":"","more_info":{}
