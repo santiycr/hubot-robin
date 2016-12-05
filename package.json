@@ -7,10 +7,10 @@
   "keywords": "robin, hubot, hubot-scripts",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-robin.git"
+    "url": "git://github.com/santiycr/hubot-robin.git"
   },
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-robin/issues"
+    "url": "https://github.com/santiycr/hubot-robin/issues"
   },
   "dependencies": {
     "lodash.once": "^4.1.1",
