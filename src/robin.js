@@ -10,11 +10,11 @@
 //   hubot rooms - get all free rooms in the office
 //
 // Notes:
-//   This integration assumes your organization has only one office (location)
-//   and less than 100 rooms (spaces) in it
+//   This integration assumes your organization has less than 100 rooms (spaces) in it
 //
 // Author:
 //   Santiago Suarez Ordoñez <santiycr@gmail.com>
+//   Gavin Mogan <gavin@gavinmogan.com>
 
 const once = require('lodash.once');
 const Robin = require('robin-js-sdk');
