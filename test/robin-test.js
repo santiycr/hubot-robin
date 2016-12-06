@@ -72,7 +72,8 @@ describe('robin', function() {
   describe('help', () => {
     it('lists help', () => {
       expect(room.robot.helpCommands()).to.eql([
-        'hubot rooms - get all free rooms in the office'
+        'hubot rooms - get all free rooms in all offices/locations',
+        'hubot rooms <location> - get all free rooms at the giving location'
       ]);
     });
   });
@@ -113,6 +114,19 @@ describe('robin', function() {
       expect(room.messages).to.eql([
         ['santi', '@hubot rooms couver'],
         ['hubot', '@santi \nRoom 2033 is free']
+      ]);
+    });
+  });
+  describe('responds to unknown location', function() {
+    beforeEach(function(done) {
+      room.user.say('santi', '@hubot rooms asdiuaspdias');
+      setTimeout(done, 100);
+    });
+
+    it('single room is responded', function() {
+      expect(room.messages).to.eql([
+        ['santi', '@hubot rooms asdiuaspdias'],
+        ['hubot', '@santi no rooms available :(']
       ]);
     });
   });
