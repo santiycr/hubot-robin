@@ -7,7 +7,8 @@
 //   ROBIN_ORGANIZATION
 //
 // Commands:
-//   hubot rooms - get all free rooms in the office
+//   hubot rooms - get all free rooms in all offices/locations
+//   hubot rooms <location> - get all free rooms at the giving location
 //
 // Notes:
 //   This integration assumes your organization has less than 100 rooms (spaces) in it
