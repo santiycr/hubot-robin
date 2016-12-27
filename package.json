@@ -1,7 +1,7 @@
 {
   "name": "hubot-robin",
   "description": "A hubot robinpowered integration for getting room occupancy and other data about your office",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Santiago Suarez Ordoñez <santiycr@gmail.com>",
   "license": "MIT",
   "keywords": "robin, hubot, hubot-scripts",
